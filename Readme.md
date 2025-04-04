@@ -82,6 +82,8 @@ RestApi-SpringBoot/
 - **Search**: Filter products by name or description.
 - **API Status Indicator**: Displays the connection status of the API.
 
+![alt text](image.png)
+
 ## Setup Instructions
 
 ### Prerequisites
