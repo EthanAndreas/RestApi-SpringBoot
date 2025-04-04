@@ -116,35 +116,41 @@ The application uses a JSON file (`products.json`) for data storage. The initial
 
 ```json
 [
-    {
-        "id": "1",
-        "name": "Laptop",
-        "description": "A high-performance laptop suitable for gaming and work.",
-        "price": 1200.00
-    },
-    {
-        "id": "2",
-        "name": "Smartphone",
-        "description": "A latest-generation smartphone with a large display and powerful camera.",
-        "price": 800.00
-    },
-    {
-        "id": "3",
-        "name": "Wireless Headphones",
-        "description": "Noise-cancelling wireless headphones with long battery life.",
-        "price": 200.00
-    },
-    {
-        "id": "4",
-        "name": "Smartwatch",
-        "description": "A smartwatch with fitness tracking and customizable watch faces.",
-        "price": 150.00
-    },
-    {
-        "id": "5",
-        "name": "Tablet",
-        "description": "A lightweight tablet with a sharp display, ideal for reading and browsing.",
-        "price": 300.00
-    }
+{
+    "id" : "1",
+    "name" : "Margherita Pizza",
+    "description" : "Traditional pizza with tomato sauce, fresh mozzarella and basil.",
+    "price" : 12.99
+},
+{
+    "id" : "2",
+    "name" : "Quattro Formaggi Pizza",
+    "description" : "A delicious pizza topped with four different cheeses: mozzarella, gorgonzola, parmesan and goat cheese.",
+    "price" : 15.50
+},
+{
+    "id" : "3",
+    "name" : "Pepperoni Pizza",
+    "description" : "Classic pizza loaded with pepperoni, tomato sauce and melted mozzarella.",
+    "price" : 14.99
+},
+{
+    "id" : "4",
+    "name" : "Vegetarian Pizza",
+    "description" : "Fresh vegetable pizza with bell peppers, mushrooms, onions and olives.",
+    "price" : 13.99
+},
+{
+    "id" : "5",
+    "name" : "Hawaiian Pizza",
+    "description" : "Sweet and savory pizza topped with ham, pineapple and double mozzarella.",
+    "price" : 14.50
+},
+{
+    "id" : "6",
+    "name" : "Seafood Pizza",
+    "description" : "A premium pizza with shrimp, mussels, calamari and pesto sauce.",
+    "price" : 18.99
+}
 ]
 ```

@@ -24,24 +24,28 @@ async function loadProducts() {
 
 function displayProducts(products) {
     const tableBody = document.getElementById('productTableBody');
-    tableBody.innerHTML = products.map(product => `
-        <tr>
-            <td>#${product.id}</td>
-            <td>
-                <strong>${product.name}</strong>
-            </td>
-            <td>${product.description}</td>
-            <td>${formatPrice(product.price)}</td>
-            <td>
-                <button class="action-btn edit-btn" onclick="editProduct('${product.id}')">
-                    <i class="fas fa-edit"></i> Edit
-                </button>
-                <button class="action-btn delete-btn" onclick="deleteProduct('${product.id}')">
-                    <i class="fas fa-trash"></i> Delete
-                </button>
-            </td>
-        </tr>
-    `).join('');
+    tableBody.innerHTML = products
+        .sort((a, b) => a.id - b.id) // Sort products by id in increasing order
+        .map(product => `
+            <tr>
+                <td>#${product.id}</td>
+                <td>
+                    <strong>${product.name}</strong>
+                </td>
+                <td>${product.description}</td>
+                <td>${formatPrice(product.price)}</td>
+                <td>
+                    <div class="button-container" style="display: flex; gap: 10px; justify-content: center;">
+                        <button class="action-btn edit-btn" onclick="editProduct('${product.id}')">
+                            <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="action-btn delete-btn" onclick="deleteProduct('${product.id}')">
+                            <i class="fas fa-trash"></i> Delete
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        `).join('');
 }
 
 document.getElementById('productForm').addEventListener('submit', async (e) => {
